@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享-款式选择</title>
+    <meta name="viewport" content="width=750,user-scalable=no">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/select.css">
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/touch.js"></script>
+    <script src="./js/clothSelector.js"></script>
+    <script src="./js/select.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">欧美</div>
+            <div class="logo"><img src="./images/logo.png" alt="orimuse"></div>
+            <div class="query">订单查询</div>
+        </div>
+        <div class="cloth_thumb clearfix">
+            <div class="thumb_front">
+                <div class="front_inner"><img src="./images/front_inner.png"></div>
+            </div>
+            <div class="thumb_back">
+                <div class="back_inner"></div>
+            </div>
+        </div>
+        <div class="design_detail">
+            <p>设计描述</p>
+            <p class="detail">美女大学生画手,画风可爱,作品"雕鼠系列"受到粉丝的狂热欢迎</p>
+        </div>
+        <div class="sizeSelector"></div>
+        <div class="cart">
+            <div class="cart_inner">
+                <div class="title">购物车</div>
+                <div class="cart_lists"></div>
+            </div>
+            <div class="ordernow" onclick="clothSelector.submitOrder()">确认订单</div>
+        </div>
+        <div class="footer">
+            版权所有 &copy;2015 orimuse 沪ICP备14041090-1 || design by orimuse <br>
+            客服热线：<a href="tel:4000163323">400 016 3323</a>
+        </div>
+    </div>
+</body>
+</html>

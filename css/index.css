@@ -1,0 +1,138 @@
+.buynow{
+    display: block;
+    cursor: pointer;
+    color:#fff;
+    font-size: 2rem;
+    width: 360px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f65a68;
+    margin: 40px auto;
+}
+.cloth_warp{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+.cloth_warp>.cloth_front,.cloth_warp>.cloth_back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 850px;
+}
+.cloth_warp > .cloth_front{
+    z-index: 2;
+    background: url('../images/cloth_front.png');
+}
+.cloth_warp > .cloth_back{
+    display: none;
+    z-index: 1;
+    background: url('../images/cloth_back.png');
+}
+.cloth_front .front_inner{
+    position: absolute;
+    left: 225px;
+    top: 275px;
+    width: 270px;
+    height: 380px;
+}
+.cloth_front .front_inner img{
+    width: 270px;
+    height: 380px;
+}
+.cloth_warp .switch{
+    position: absolute;
+    z-index: 999;
+    width: 85px;
+    height: 200px;
+    right:20px;
+    bottom:200px;
+}
+.cloth_warp .warp_buynow{
+    position: absolute;
+    bottom:0;
+    left: 195px;
+}
+.switch li{
+    margin: 20px 0;
+    cursor: pointer;
+    transition:color 0.3s ease,background 0.3s ease;
+    background: #fff;
+    color:#cccccc;
+    width: 85px;
+    height: 85px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: 85px;
+    font-size: 1.7rem;
+}
+.switch li.sel,.switch li:active{
+    background: #cccccc;
+    color:#fff;
+}
+.cloth_info .info_tab{
+    height: 80px;
+    width: 100%;
+    box-sizing:border-box;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+.info_tab li{
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color:#999;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 25px;
+    box-sizing: border-box;
+    width: 25%;
+    height: 30px;
+    border-right: 1px solid #999;
+}
+.info_tab li:active,.info_tab li.sel{
+    color:#3699ff;
+}
+.info_tab li:last-child{
+    border-right: none;
+}
+.info_inner .author_info{
+    width: 100%;
+    height: 240px;
+    box-sizing: border-box;
+    padding: 50px 20px;
+}
+.author_info .head{
+    float: left;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.author_info .head img{
+    width: 130px;
+    height: 130px;
+}
+.author_info .info{
+    float: right;
+    width: 550px;
+}
+.info .name{
+    font-size: 2.2rem;
+    line-height: 50px;
+}
+.info .note{
+    color:#666;
+    font-size: 1.7rem;
+    line-height: 40px;
+}
+.author_info .xq{
+    width: 100%;
+    height: 30px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享-确认订单</title>
+    <meta name="viewport" content="width=375,user-scalable=no">
+    <link rel="stylesheet" href="css/common-mobi.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/mui.picker.min.css">
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/touch.js"></script>
+    <script src="./js/mui.min.js"></script>
+    <script src="./js/mui.picker.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">收货地址</div>
+            <div class="logo"><img src="./images/logo.png" alt="orimuse" height="44"></div>
+            <div class="query">订单查询</div>
+        </div>
+        <div class="order_detail">
+            <div class="clearfix"><div class="input-title">收货人：</div><div class="input-box"><input type="text" id="order-name" placeholder="请输入收货人名字"></div></div>
+            <div class="clearfix"><div class="input-title">手机号码：</div><div class="input-box"><input type="tel" id="order-tel" placeholder="请填写手机号"></div></div>
+            <div class="clearfix"><div class="input-title">所在地区：</div><div class="input-box"><div id="order-area"></div></div></div>
+            <div class="clearfix"><div class="input-title">详细地址：</div><div class="input-box"><input type="text" id="order-addr" placeholder="请填写详细地址"></div></div>
+        </div>
+        <div class="cart">
+            <div class="cart_inner">
+                <div class="title">订单详情</div>
+                <div class="cart_lists"></div>
+                <div class="total-info clearfix"><div>共 <span class="total-num"></span> 件商品</div><div>合计：<span class="price">￥<span class="total-price"></span></span></div></div>
+            </div>
+        </div>
+        <div class="pay common-list">
+            <div class="title">支付方式</div>
+            <div class="list">
+                <div class="icon"><img src="./images/alipay.png"></div>
+                <div class="name">支付宝</div>
+                <div class="select sel"></div>
+            </div>
+        </div>
+        <div class="express common-list">
+            <div class="title">物流方式</div>
+            <div class="list">
+                <div class="icon"><img src="./images/sf-express.png"></div>
+                <div class="name">顺丰速运</div>
+                <div class="select sel"></div>
+            </div>
+        </div>
+        <div class="order_detail">
+            <div class="clearfix"><div class="input-title">备注信息</div><div class="input-box"><input type="text" id="beizhu" placeholder="可以输入备注信息"></div></div>
+        </div>
+        <div class="bill">
+            <div class="option">
+                <div class="bill-select"></div>
+                我需要发票
+            </div>
+            <input type="text" id="bill-info" placeholder="请输入发票抬头" style="display: none" enable="false">
+        </div>
+        <div class="ordernow">确认订单</div>
+        <div class="footer">
+            版权所有 &copy;2015 orimuse 沪ICP备14041090-1 || design by orimuse <br>
+            客服热线：<a href="tel:4000163323">400 016 3323</a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/order.js"></script>
