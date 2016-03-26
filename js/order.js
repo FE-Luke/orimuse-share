@@ -20,7 +20,7 @@ function cityPicker(data){
     cityPicker3.setData(d);
     window.cityPicker3 = cityPicker3;
     Zepto('#order-area').bind('tap',function(){
-        Zepto(input).blur();
+        Zepto('input').blur();
         cityPicker3.show(function(items) {
             $('#order-area').text((items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text);
         });
